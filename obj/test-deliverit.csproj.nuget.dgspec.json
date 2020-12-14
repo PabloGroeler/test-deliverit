@@ -10,14 +10,11 @@
         "projectUniqueName": "C:\\Git\\test-deliverit\\test-deliverit.csproj",
         "projectName": "test-deliverit",
         "projectPath": "C:\\Git\\test-deliverit\\test-deliverit.csproj",
-        "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Celta\\.nuget\\packages\\",
         "outputPath": "C:\\Git\\test-deliverit\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Celta\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -41,6 +38,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Faker.NETCore": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[5.0.0, )",
@@ -61,17 +66,17 @@
               "target": "Package",
               "version": "[5.0.1, )"
             },
-            "Microsoft.EntityFrameworkCore.InMemory": {
+            "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[5.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[5.0.1, )"
+              "version": "[16.8.3, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.15.2, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
@@ -80,6 +85,16 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
             }
           },
           "imports": [
