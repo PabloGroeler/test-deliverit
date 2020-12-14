@@ -6,12 +6,14 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-
+using test_deliverit.Core.CrossCutting.DependencyInjection;
+using test_deliverit.Core.Data.Context;
 namespace test_deliverit
 {
     public class Startup
@@ -26,8 +28,14 @@ namespace test_deliverit
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddEntityFrameworkSqlServer()
+             .AddDbContext<Context>(options => options.UseNpgsql(Configuration.GetConnectionString("DeliverItContext")));
 
             services.AddControllers();
+
+            ConfigureRepository.ConfigureDependecyService(services);
+            ConfigureService.ConfigureDependencysService(services);
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "test_deliverit", Version = "v1" });

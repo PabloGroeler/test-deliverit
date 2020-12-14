@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Git\\test-deliverit\\test-deliverit.csproj": {}
+    "C:\\Git\\test-deliverit\\test-deliverit.csproj": {}
   },
   "projects": {
-    "c:\\Git\\test-deliverit\\test-deliverit.csproj": {
+    "C:\\Git\\test-deliverit\\test-deliverit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Git\\test-deliverit\\test-deliverit.csproj",
+        "projectUniqueName": "C:\\Git\\test-deliverit\\test-deliverit.csproj",
         "projectName": "test-deliverit",
-        "projectPath": "c:\\Git\\test-deliverit\\test-deliverit.csproj",
-        "packagesPath": "C:\\Users\\Celta\\.nuget\\packages\\",
-        "outputPath": "c:\\Git\\test-deliverit\\obj\\",
+        "projectPath": "C:\\Git\\test-deliverit\\test-deliverit.csproj",
+        "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
+        "outputPath": "C:\\Git\\test-deliverit\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Celta\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -51,6 +54,28 @@
               "noWarn": [
                 "NU1605"
               ]
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

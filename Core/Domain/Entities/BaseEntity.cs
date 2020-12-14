@@ -1,9 +1,11 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace test_deliverit.Core.Domain.Entities
 {
     public class BaseEntity
     {
-        public Guid Id {get; set;}
+        [Key]
+        public Guid Id { get; set; }
     }
 }
